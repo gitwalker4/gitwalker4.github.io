@@ -1,0 +1,40 @@
+.jumboback {
+  background-image: url('../img/yosemitebg.jpg');
+  background-color: rgba(0, 0, 0, 0.589);
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.skills-list li {
+  margin-top: 1rem;
+}
+
+.tools {
+  font-size: 0.75rem;
+}
+
+.card {
+  height: 100%;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: none;
+  color: #778;
+}
+
+.prev {
+  left: 10%;
+}
+
+.next {
+  right: 10%;
+}
