@@ -1,8 +1,26 @@
-.jumboback {
-  background-image: url('../img/yosemitebg.jpg');
+/* Variables */
+:root {
+  --primaryColor: rgb(85, 107, 47);
+}
+
+main {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.jumboback,
+.footer-bg {
   background-color: rgba(0, 0, 0, 0.589);
   background-blend-mode: overlay;
   background-size: cover;
+}
+
+.jumboback {
+  background-image: url('../img/headerbg.jpg');
+}
+
+.footer-bg {
+  background-image: url('../img/footerbg.jpg');
 }
 
 .skills-list {
@@ -19,22 +37,31 @@
 
 .card {
   height: 100%;
+  box-shadow: 0px 0px 5px var(--primaryColor);
 }
 
 .prev,
 .next {
   position: absolute;
-  top: 50%;
+  top: 45%;
   cursor: pointer;
   border: none;
   background-color: none;
-  color: #778;
+  color: var(--primaryColor);
 }
 
-.prev {
-  left: 10%;
+.color-bg {
+  background-color: var(--primaryColor);
 }
 
-.next {
-  right: 10%;
+.email {
+  color: white;
+  text-decoration: none;
+}
+
+.link {
+  height: 30px;
+  width: 30px;
+  background: none;
+  border: none;
 }
