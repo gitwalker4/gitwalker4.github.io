@@ -65,3 +65,16 @@ main {
   background: none;
   border: none;
 }
+
+.projCard,
+.proj {
+  border-radius: 5px;
+}
+
+.proj {
+  transition: transform 1s;
+}
+
+.proj:hover {
+  transform: scale(1.05);
+}
