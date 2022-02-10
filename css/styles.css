@@ -21,6 +21,8 @@ main {
 
 .footer-bg {
   background-image: url('../img/footerbg.jpg');
+  background-color: rgba(41, 123, 189, 0.6);
+  background-blend-mode: multiply;
 }
 
 @keyframes animated-bg {
@@ -44,24 +46,6 @@ main {
 .card {
   height: 100%;
   box-shadow: 0px 0px 5px var(--primaryColor);
-}
-
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  cursor: pointer;
-  border: none;
-  background-color: none;
-  color: white;
-}
-
-.prev {
-  left: 12%;
-}
-
-.next {
-  right: 12%;
 }
 
 .color-bg {
@@ -96,7 +80,24 @@ main {
 
 .app-name {
   color: black;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
   box-shadow: 0px 0px 5px black;
+}
+
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 35%;
+  display: inline-block;
+  transition: background-color, box-shadow, border 0.6s ease-in-out;
+}
+
+.active, .dot:hover {
+  background-color: #afafaf;
+  border: 1px solid black;
+  box-shadow: 0px 0px 3px black;
 }
