@@ -60,5 +60,3 @@ dot4.addEventListener('click', () => {
   webDash.classList.replace('col-lg-8', 'd-lg-none');
   employeeDir.classList.replace('d-lg-none', 'col-lg-8');
 });
-
-const drapes = document.querySelector('.drapes');
