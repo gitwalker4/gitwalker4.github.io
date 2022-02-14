@@ -18,10 +18,10 @@ const dot3 = document.querySelector('.dot-3');
 const dot4 = document.querySelector('.dot-4');
 
 dot1.addEventListener('click', () => {
-  dot1.classList.add('active');
-  dot2.classList.remove('active');
-  dot3.classList.remove('active');
-  dot4.classList.remove('active');
+  dot1.classList.add('current');
+  dot2.classList.remove('current');
+  dot3.classList.remove('current');
+  dot4.classList.remove('current');
   gallery.classList.replace('col-lg-8', 'd-lg-none');
   webDash.classList.replace('col-lg-8', 'd-lg-none');
   employeeDir.classList.replace('col-lg-8', 'd-lg-none');
@@ -29,10 +29,10 @@ dot1.addEventListener('click', () => {
 });
 
 dot2.addEventListener('click', () => {
-  dot2.classList.add('active');
-  dot1.classList.remove('active');
-  dot3.classList.remove('active');
-  dot4.classList.remove('active');
+  dot2.classList.add('current');
+  dot1.classList.remove('current');
+  dot3.classList.remove('current');
+  dot4.classList.remove('current');
   gameShow.classList.replace('col-lg-8', 'd-lg-none');
   webDash.classList.replace('col-lg-8', 'd-lg-none');
   employeeDir.classList.replace('col-lg-8', 'd-lg-none');
@@ -40,10 +40,10 @@ dot2.addEventListener('click', () => {
 });
 
 dot3.addEventListener('click', () => {
-  dot3.classList.add('active');
-  dot1.classList.remove('active');
-  dot2.classList.remove('active');
-  dot4.classList.remove('active');
+  dot3.classList.add('current');
+  dot1.classList.remove('current');
+  dot2.classList.remove('current');
+  dot4.classList.remove('current');
   gameShow.classList.replace('col-lg-8', 'd-lg-none');
   gallery.classList.replace('col-lg-8', 'd-lg-none');
   employeeDir.classList.replace('col-lg-8', 'd-lg-none');
@@ -51,10 +51,10 @@ dot3.addEventListener('click', () => {
 });
 
 dot4.addEventListener('click', () => {
-  dot4.classList.add('active');
-  dot1.classList.remove('active');
-  dot2.classList.remove('active');
-  dot3.classList.remove('active');
+  dot4.classList.add('current');
+  dot1.classList.remove('current');
+  dot2.classList.remove('current');
+  dot3.classList.remove('current');
   gameShow.classList.replace('col-lg-8', 'd-lg-none');
   gallery.classList.replace('col-lg-8', 'd-lg-none');
   webDash.classList.replace('col-lg-8', 'd-lg-none');

@@ -1,11 +1,20 @@
 /* Variables */
 :root {
-  --primaryColor: rgb(85, 107, 47);
+  --primaryColor: #013220;
+  --secondaryColor: #002e4b;
 }
 
 main {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  background-color: var(--secondaryColor);
+  animation: animated-main 7s infinite;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.nav-item {
+  border: none;
 }
 
 .jumboback,
@@ -16,19 +25,24 @@ main {
 
 .jumboback {
   background-image: url('../img/headerbg.jpg');
-  animation: animated-bg 7s infinite;
+  animation: animated-head 7s infinite;
 }
 
 .footer-bg {
   background-image: url('../img/footerbg.jpg');
-  background-color: rgba(41, 123, 189, 0.6);
-  background-blend-mode: multiply;
+  animation: animated-head 7s infinite;
 }
 
-@keyframes animated-bg {
-  0% {background-color: rgb(85, 107, 20, 0.2);}
-  50% {background-color: rgb(0, 0, 0, 0.4);}
-  100% {background-color: rgb(85, 107, 20, 0.2);}
+@keyframes animated-main {
+  0% {background-color: rgb(1, 32, 20, 0.8);}
+  50% {background-color: rgb(0, 46, 75, 0.8);}
+  100% {background-color: rgb(1, 32, 20, 0.8);}
+}
+
+@keyframes animated-head {
+  0% {background-color: rgb(0, 46, 75, 0.6);}
+  50% {background-color: rgb(1, 50, 32, 0.5);}
+  100% {background-color: rgb(0, 46, 75, 0.6);}
 }
 
 .skills-list {
@@ -54,11 +68,16 @@ main {
 
 .card {
   height: 100%;
+  border: 1px solid black;
   box-shadow: 0px 0px 5px var(--primaryColor);
 }
 
 .color-bg {
-  background-color: var(--primaryColor);
+  background: var(--primaryColor);
+}
+
+.bg-none {
+  background: none;
 }
 
 .email {
@@ -71,7 +90,12 @@ main {
   width: 30px;
   background: none;
   border: none;
+  transition: transform 0.5s ease-in-out;
 }
+
+.link:hover {
+  transform: scale(1.05);
+} 
 
 .projCard,
 .proj {
@@ -89,11 +113,12 @@ main {
 
 .projButton {
   width: fit-content;
+  background-color: var(--secondaryColor);
 }
 
 .app-name {
   color: black;
-  background: rgba(255, 255, 255, 0.8);
+  background: white;
   border-radius: 5px;
   box-shadow: 0px 0px 5px black;
 }
@@ -109,10 +134,10 @@ main {
   transition: background-color 0.7s ease-in-out, box-shadow 0.7s ease-in-out, border 0.7s ease-in-out;
 }
 
-.active, .dot:hover {
-  background-color: rgb(195, 209, 190);
-  border: 1px solid black;
-  box-shadow: 0px 0px 3px black;
+.current, .dot:hover {
+  background-color: var(--secondaryColor);
+  border: 1px solid white;
+  box-shadow: 0px 0px 5px white;
 }
 
 @keyframes rotate {
