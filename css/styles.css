@@ -3,14 +3,21 @@
   --primaryColor: #013220;
   --secondaryColor: #002e4b;
 }
+* {box-sizing: border-box;}
 
-main {
-  border-top: 3px solid white;
+header {
   border-bottom: 3px solid white;
+}
+
+body {
   background-color: var(--secondaryColor);
   animation: animated-main 7s infinite;
   background-blend-mode: overlay;
   background-size: cover;
+}
+
+footer {
+  border-top: 3px solid white;
 }
 
 .nav-item {
@@ -157,4 +164,12 @@ main {
   50% {transform: rotateX(15deg);}
   75% {transform: rotateY(-15deg);}
   100% {transform: rotateX(15deg);}
+}
+
+@media (min-width: 1400px) {
+  main,
+  .navbar {
+    width: 92%;
+    margin: 0 auto;
+  }
 }
