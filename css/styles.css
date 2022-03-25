@@ -31,12 +31,12 @@ footer {
 }
 
 .jumboback {
-  background-image: url('../img/headerbg.jpg');
+  background-image: url('../img/headerbg.webp');
   animation: animated-head 7s infinite;
 }
 
 .footer-bg {
-  background-image: url('../img/footerbg.jpg');
+  background-image: url('../img/footerbg.webp');
   animation: animated-head 7s infinite;
 }
 
